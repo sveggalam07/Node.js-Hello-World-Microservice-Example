@@ -20,5 +20,5 @@ const customService = require('@mia-platform/custom-plugin-lib')()
 const robotHello = require('./handlers/robotHello')
 
 module.exports = customService(async function index(service) {
-  service.addRawCustomPlugin('GET', '/hello', robotHello.handler, robotHello.schema)
+  service.addRawCustomPlugin('GET', '/', robotHello.handler, robotHello.schema)
 })
