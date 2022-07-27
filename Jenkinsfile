@@ -36,6 +36,7 @@ pipeline {
                     // started docker daemon
                     // Problem 2
                     // Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: 
+                    // added jenkins user to docker
                     dockerImage = docker.build registry + ":$BUILD_NUMBER"
             }
             }
